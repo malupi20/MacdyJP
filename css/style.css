@@ -1,0 +1,798 @@
+
+body {
+  overflow-x: hidden;
+}
+    .buscador {
+      position: absolute;
+      width: 100%;
+      z-index: 200;
+
+
+
+    }
+    .carusel {
+      position: relative;
+      
+    }
+
+    /*estilos MACDY*/
+    /*logoestilomacdy*/
+    .boton1{
+      width: 150px;
+      
+    }
+
+    /*simboloestilorostros*/
+    .boton2{
+      width: 75px;
+      
+    }
+
+     .navbar-brand{
+      padding-left: 20px;
+      padding-top: 20px;
+    
+     }
+   
+    .carousel-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 100vh; /* O usa 50vh si prefieres que no sea tan alto */
+      }
+      
+      @media (max-width: 768px) {
+        .carousel-item img {
+          height: 100vh; /* Altura más adecuada para móviles */
+        }
+      
+        .boton1 {
+          width: 120px;
+          height: auto;
+        }
+      }
+
+    
+   /*estilos logo y slogan*/
+  .mac{
+    background-color: #f6edf8;
+  }
+
+
+
+  .logo{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  } 
+    
+  .logo img{
+    width: 100%;
+    
+  }
+
+.slogan{
+    padding-top: 150px;
+    
+
+  } 
+.slogan h1{
+  
+  color: #82368C;
+  text-align: center;
+  margin: 10px;
+  font-size: 70px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  } 
+
+
+/*estilos mision vision*/
+.titu{
+  padding-top: 15px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: #82368C;
+}
+.tituperfimac{
+  padding-top: 15px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: #f9c9ff;
+}
+
+
+.titunuestroequipo{
+  padding-top: 15px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: #82368C;
+  text-align: center;
+  
+}
+.caja1{
+      margin-top: 2%;
+      margin-bottom: 2%;
+
+    }
+
+    .caja2{
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+
+
+
+/*estilos texto*/
+.textmac{
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+
+
+   
+   /* Estilos para los perfiles macdy */
+
+   .perfiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    background-color: #000;
+    padding: 30px;
+  }
+  
+  .perfiles {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    text-align: center;
+  }
+   
+  
+    .card-containergaleria1 {
+      perspective: 1000px;
+      width: calc(33.333% - 2rem);
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .cardgale1 {
+      width: 300px;
+      height: 400px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+    }
+
+    .card-containergaleria1:hover .cardgale1 {
+      transform: rotateY(180deg);
+    }
+
+    .card-facegale1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      
+
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .front { 
+      background-size: cover;
+      background-position: center;
+      
+      
+    }
+
+    .card-facegale1.front img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+    
+    .card-facegale1.back {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+    .back {
+      background-color: #f8f8f8;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 85px;
+      transform: rotateY(180deg);
+
+    }
+
+    .contenido-texto {
+  display: flex;
+  flex-direction: column; /* Esto organiza los elementos en vertical */
+  text-align: center;
+  
+}
+
+ .contenido-texto h3 {
+  display: flex;
+  flex-direction: column; /* Esto organiza los elementos en vertical */
+  text-align: center;
+  
+}
+   
+    /*estilos contactanos*/
+
+   /*formulario*/ 
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* estira para igualar el alto del contenedor */
+  padding: 100px 20px;
+  gap: 20px;
+   background-color: #460f4a30 ;
+   border-radius: 2%;
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  max-width: 500px;
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.contact-form h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/*estilo img*/
+/* Imagen al lado derecho con alto igual al formulario */
+.contact-image {
+  flex: 1 1 280px;
+  display: flex;
+  align-items: stretch; /* clave para que el alto se iguale */
+  justify-content: center;
+  max-width: 280px;
+}
+
+.contact-image img {
+  height:650px;
+  object-fit: contain;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  border-radius: 20px;
+  margin-top: 55px;
+  margin-left: 20px;
+}
+
+/* Responsive para móviles */
+@media screen and (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-image {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-image {
+    margin-top: 20px;
+    max-height: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-image img {
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/*FOOTER*/
+
+footer{
+
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:400px;
+
+}
+
+.simbo{
+    color: #be5bce;
+    text-decoration: none;
+}
+
+footer a{
+    color: rgb(51, 183, 51);
+}
+
+footer .pie{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+/*footer division*/
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #959595; /* o el color que prefieras */
+  width: 100%;
+}
+/*footer redes sociales*/
+
+  #redes-sociales {
+    text-align: center;
+    padding: 2rem;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 20px #82368C;
+  }
+  
+  #redes-sociales h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .redes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+  }
+  
+  .red-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .red-social i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .red-social span {
+    font-size: 0.9rem;
+  }
+  
+  /* Colores y efectos hover para cada red social */
+  .red-social.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  }
+  
+  .red-social.facebook {
+    background: #1877f2;
+  }
+  
+  .red-social.twitter {
+    background: #1da1f2;
+  }
+  
+  .red-social.linkedin {
+    background: #0077b5;
+  }
+  
+  .red-social.youtube {
+    background: #ff0000;
+  }
+  
+  .red-social.github {
+    background: #333;
+  }
+  
+  /* Efecto hover */
+  .red-social:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .red-social {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .red-social i {
+      font-size: 1.5rem;
+    }
+  
+    .red-social span {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .red-social {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .red-social i {
+      font-size: 1.2rem;
+    }
+  
+    .red-social span {
+      font-size: 0.7rem;
+    }
+  }
+
+
+
+
+
+/*estilos REDES*/
+.fondo{
+  position: relative;
+  display: inline-block;
+}
+
+.texto{
+  font-size: 80px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 25%; /* Centrado vertical */
+  left: 50%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajuste exacto al centro */
+  color: white;
+  
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/*para que al poner el enlace no cambie de color*/
+.simbolos a {
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+/*estilo del simbolo*/
+.simbolos{
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 60%; /* Centrado vertical */
+  left: 20%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajuste exacto al centro */
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  
+
+  
+  
+}
+
+/*para que al poner el enlace no cambie de color*/
+.simbolos2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.simbolos2{
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 60%; /* Centrado vertical */
+  left: 40%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajuste exacto al centro */
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*para que al poner el enlace no cambie de color*/
+.simbolos3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.simbolos3{
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 60%; /* Centrado vertical */
+  left: 60%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajuste exacto al centro */
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*para que al poner el enlace no cambie de color*/
+.simbolos4 a {
+  color: inherit;
+  text-decoration: none;
+}
+.simbolos4{
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 60%; /* Centrado vertical */
+  left: 80%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajuste exacto al centro */
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+/*estilos ROSTROS EN LA CALLE*/
+.problematica {
+  padding: 40px 20px;
+  background-color: #12102ac8;
+  
+}
+
+.probleobje{
+padding: 20px;
+background-color: #000;
+}
+
+.fotografias .row
+{
+  background-color: black;
+  text-align: center;
+  Color: white;
+}
+
+
+
+/* Contenedor general */
+.servicios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+}
+
+/* Tarjeta con proporción 4:3 */
+.card-containergaleria {
+  width: calc(33.333% - 2rem);
+  aspect-ratio: 4 / 3;
+  position: relative;
+}
+
+/* Efecto flip */
+.cardgale {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card-containergaleria:hover .cardgale {
+  transform: rotateY(180deg);
+}
+
+/* Ambas caras */
+.card-facegale {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Parte trasera */
+.back {
+  background-color: #f8f8f8;
+  color: #333;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Texto centrado, sin scroll */
+.contenido-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  overflow: hidden; /* Oculta el scroll */
+}
+
+.contenido-texto h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contenido-texto p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-containergaleria {
+    width: 100%;
+  }
+}
+
+
+
+/*estilos NOSOTROS*/
+
+.historia {
+  padding: 40px 20px;
+  background-color: #292929c8;
+  
+}
+
+.textohistoria h2 { 
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.textohistoria p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #ffffff;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/*perfiles nosotros*/
+.nosotros {
+  padding: 40px 20px;
+  
+}
+
+.fotografiasperfil{
+  background-color: #000;
+  border-radius: 5%
+}
+
+.fotografiasperfil img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  
+}
+
+.textoperfil {
+  text-align: center;
+  padding: 20px;
+}
+
+.textoperfil h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.textoperfil h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.textoperfil p {
+  text-align: justify;
+  font-size: 15px;
+  color: #555;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
