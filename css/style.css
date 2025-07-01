@@ -629,12 +629,12 @@ footer .pie{
 
 .probleobje{
 padding: 20px;
-background-color: #000;
+background-color: #141229d1;
 }
 
 .fotografias .row
 {
-  background-color: black;
+  background-color: #12102ac8;
   text-align: center;
   Color: white;
 }
@@ -698,7 +698,7 @@ background-color: #000;
 }
 
 /* Texto centrado, sin scroll */
-.contenido-texto {
+.contenido-texto1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -708,12 +708,13 @@ background-color: #000;
   overflow: hidden; /* Oculta el scroll */
 }
 
-.contenido-texto h3 {
+.contenido-texto1 h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.contenido-texto p {
+.contenido-texto1 p {
+  text-align: justify;
   font-size: 1rem;
   line-height: 1.4;
   margin: 0;
@@ -729,6 +730,19 @@ background-color: #000;
 
 
 /*estilos NOSOTROS*/
+.textonoso{
+  font-size: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%; /* Centrado vertical */
+  left: 25%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajuste exacto al centro */
+  color: white;
+  
+  padding: 10px;
+  border-radius: 5px;
+}
 
 .historia {
   padding: 40px 20px;
