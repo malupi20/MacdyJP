@@ -245,21 +245,85 @@
 <br>
 
 <!--contactanos-->
-<form action="mailto:santy8anty@gmail.com" method="POST" enctype="text/plain">
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="Nombre" required>
+    <div class="form-container">
+        <h2 class="form-title">Contáctanos</h2>
+        
+        <form action="mailto:santy8anty@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="Nombre" required placeholder="Tu nombre completo">
+            </div>
 
-  <label for="correo">Correo:</label>
-  <input type="email" id="correo" name="Correo" required>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="Correo" required placeholder="tu@email.com">
+            </div>
 
-  <label for="celular">Celular:</label>
-  <input type="tel" id="celular" name="Celular" required>
+            <div class="form-group">
+                <label for="celular">Número de Celular</label>
+                <input type="tel" id="celular" name="Celular" required placeholder="+57 300 123 4567">
+            </div>
 
-  <label for="mensaje">Mensaje:</label>
-  <textarea id="mensaje" name="Mensaje" rows="5" required></textarea>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="Mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
 
-  <button type="submit">Enviar</button>
-</form>
+            <button type="submit" class="submit-btn">
+                Enviar Mensaje
+            </button>
+        </form>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script>
+        // Agregar efectos de interacción adicionales
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input, textarea');
+            
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+
+            // Efecto de ondas al hacer clic en el botón
+            const submitBtn = document.querySelector('.submit-btn');
+            submitBtn.addEventListener('click', function(e) {
+                let ripple = document.createElement('span');
+                ripple.style.position = 'absolute';
+                ripple.style.borderRadius = '50%';
+                ripple.style.background = 'rgba(255, 255, 255, 0.6)';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple 0.6s linear';
+                ripple.style.left = (e.clientX - e.target.offsetLeft) + 'px';
+                ripple.style.top = (e.clientY - e.target.offsetTop) + 'px';
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Agregar animación de ondas
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 
 <footer>
   
