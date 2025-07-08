@@ -825,9 +825,13 @@ background-color: #191a33;
 }
 
 /*perfiles nosotros*/
+.container1{
+  background-color: white;
+
+}
 .nosotros {
   padding: 40px 20px;
-  
+ 
 }
 
 
@@ -871,18 +875,24 @@ background-color: #191a33;
 }
 
 /*estilos AUDIOVISUAL*/
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0b1f3a;
-  color: #fff;
+.carusel1{
+background-color: #0b1f3a;
+color: white;
 }
 
+.audiovisuales-section1{
+
+  padding: 60px 30px;
+  margin: auto;
+  text-align: center;
+  max-width: 1200px;
+}
 .audiovisuales-section {
   padding: 60px 30px;
   max-width: 1200px;
   margin: auto;
   text-align: center;
+  background-color: #0b1f3a;
 }
 
 .audiovisuales-section h2 {
@@ -991,8 +1001,6 @@ body {
 
 
 
-
--*------------------
 .titulo-overlay {
   position: absolute;
   top: 30px;
